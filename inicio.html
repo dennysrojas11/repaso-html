@@ -17,6 +17,43 @@
             <td>segunda columna de la fila 2</td>
             <td>tercera columna de la fila 2</td>
         </tr>
-    </table>    
+    </table>
+    
+    <hr>
+    <form action="mailto:ejemplo@ejemplo.com" method="post" enctype="text/plain">
+        Nombre: <input type="text" name="nombre" size="25" maxlength="50"><br><br>
+        Apellidos: <input type="text" name="apellidos" size="35" maxlength="100"><br><br>
+        Email:<input type="text" value="@" name="correo" size="40" maxlength="100"><br><br>
+        Localidad: <input type="text" name="poblacion" size="15" maxlength="50"><br><br>
+
+        <table width="50%" border="0" cellspacing="0" cellpadding="10">
+            <tr><td> Edad: <br>
+                <input type="radio" name="edad" value="020"> 0 - 20 <br>
+                <input type="radio" name="edad" value="2040" checked> 20 - 40 <br> 
+                <input type="radio" name="edad" value="4060"> 40 - 60 <br>
+                <input type="radio" name="edad" value="60100"> 60 - 100
+            </td>
+            <td>Cual es tu animal favorito?<br>
+                <input type="checkbox" name="animal">Perro<br>
+                <input type="checkbox" name="animal">Gato<br>
+                <input type="checkbox" name="animal">Caballo<br>
+                <input type="checkbox" name="animal">Otros
+            </td>
+            </tr>
+        </table>
+        Escribe tu opinion sobre nuestra pagina web<br>
+        <textarea cols="40" rows="5" name="opinion">Escribe tu opinion...</textarea><br><br>
+        Tienes alguna sugerencia...<br>
+        <textarea cols="40" rows="5" name="sugerencias">Escribe aqui tus sugerencias...</textarea><br><br>
+        Cuanto navegas por internet?<br>
+        <select name="frecuencia" size="2">
+            <option value="1">2 horas al dia</option>
+            <option value="2">4 horas al dia</option>
+            <option value="3">10 horas al dia</option>
+            <option value="4">20 horas al dia</option>
+        </select><br><br>
+        <input type="submit" value="Enviar formulario">
+        <input type="Reset" value="Borrar formulario">
+    </form>
 </body>
 </html>
